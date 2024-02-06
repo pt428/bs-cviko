@@ -12036,4 +12036,8 @@ input[type=tel]::placeholder,
 input[type=number]::placeholder,
 input[type=date]::placeholder {
   color: rgb(165, 156, 156);
+}
+
+p {
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */
