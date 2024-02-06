@@ -11990,16 +11990,13 @@ header {
   min-height: 95vh;
 }
 
-.main-page {
-  max-width: 35rem;
-  min-width: 15rem;
-}
-
 form {
   border-radius: 1rem;
 }
 
-.header-h1, h2, .h2 {
+.header-h1,
+h2,
+.h2 {
   font-family: "Libre Baskerville";
   margin: 1rem;
   padding-top: 2rem;
@@ -12010,15 +12007,6 @@ form {
   color: rgb(240, 4, 4);
   text-transform: uppercase;
   font-weight: bold;
-}
-
-h2.booking, .booking.h2 {
-  color: aquamarine;
-}
-
-input .header-form {
-  background-color: rgb(50, 16, 240);
-  color: red;
 }
 
 .icons {
@@ -12038,6 +12026,6 @@ input[type=date]::placeholder {
   color: rgb(165, 156, 156);
 }
 
-p {
+.col-lg p {
   text-align: justify;
 }/*# sourceMappingURL=main.css.map */

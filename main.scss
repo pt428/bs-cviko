@@ -1,70 +1,56 @@
 // Then import Bootstrap
 $primary: rgb(190, 230, 14);
- 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
 @import "./node_modules/bootstrap/scss/bootstrap";
-body{
-   background-color: black;
-   margin: 0;
-   color: antiquewhite;
+
+body {
+  background-color: black;
+  margin: 0;
+  color: antiquewhite;
 }
- header{
-    // color: white;
-    background-image:  url(./img/bg-img.jpg);
-   //  background-attachment: fixed;
-   //  background-position: center; /* Center the image */
-    background-repeat: no-repeat;  
-    background-size: cover;  
-    min-height: 95vh;
- }
- 
- .main-page{
-   max-width:  35rem;
-  min-width: 15rem;
- }
- form{
-   border-radius: 1rem;
-  
- }
- .header-h1,h2 {
-   font-family: "Libre Baskerville";
-    
-   
-   margin: 1rem;
-   padding-top: 2rem;
-}
-.header-h2{
-   font-family: Roboto;
-   color: rgb(240, 4, 4);
-   
-   text-transform: uppercase;
-   font-weight: bold;
-}
-h2.booking{
-   
-   color: aquamarine;
+
+//img backgroung of main page
+header {
+  background-image: url(./img/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 95vh;
 }
  
- input .header-form{
-    background-color: rgb(50, 16, 240);
-    color: red;
- }
-  
- 
- 
- .icons{
-   font-size: 2rem;
- }
- input[type=text]::placeholder ,
- input[type=email]::placeholder ,
- input[type=phone]::placeholder ,
- input[type=tel]::placeholder ,
- input[type=number]::placeholder ,
- input[type=date]::placeholder 
- {
-   color: rgb(165, 156, 156);
-    
- }
- p{
-   text-align: justify;
- }
+//input form on main page
+form {
+  border-radius: 1rem;
+}
+// Candy Hill, Quick booking
+.header-h1,
+h2 {
+  font-family: "Libre Baskerville";
+  margin: 1rem;
+  padding-top: 2rem;
+}
+// HOTEL 
+.header-h2 {
+  font-family: Roboto;
+  color: rgb(240, 4, 4);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+// size of icon in contact section
+.icons {
+  font-size: 2rem;
+}
+//input placeholder color
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="phone"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="number"]::placeholder,
+input[type="date"]::placeholder {
+  color: rgb(165, 156, 156);
+}
+// history section <p>
+.col-lg p {
+  text-align: justify;
+}

@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,109 +12,111 @@
     <title>Pavel Tichý</title>
   </head>
   <body>
-    <div class="container-fluid">
-      
+    <!-- main page-->
+    <div class="container-fluid">      
       <header>
         <div class="d-flex justify-content-center">
-        <div class="main-page col-6">
-          <div class="header-h1 text-center">
-            <h1>Candy Hill</h1>
-          </div>
-          <div class="header-h2 text-center">
-            <h2>HOTEL</h2>
-          </div>
-          <!-- formular -->
-          <form action="" class="text-white bg-dark p-2 opacity-75">
-            <h2 class="booking text-center">Quick booking</h2>
-            <!-- name -->
-            <label for="inputName" class="form-label">Name</label>
-            <input type="text" id="inputName" class="text-white form-control bg-dark" aria-describedby="input-name" placeholder="Input Name" >  
+          <div class="main-page col-6">
 
-            <!-- ./name -->
-            <!-- surname -->
-            <label for="inputSureName" class="form-label">Surname</label>
-            <input type="text" id="inputSurName" class="text-white form-control bg-dark" aria-describedby="input-name" placeholder="Input Surname" >
+            <div class="header-h1 text-center">
+              <h1>Candy Hill</h1>
+            </div>
 
-            <!-- emai -->
-            <label for="inputEmail" class="form-label">Email</label>
-            <input type="email" id="inputEmail" class="text-white form-control bg-dark" aria-describedby="input-name" placeholder="Input Email" >
-            <!-- ./email -->    
+            <div class="header-h2 text-center">
+              <h2>HOTEL</h2>
+            </div>
 
+            <!-- formular -->
+            <form action="" class="text-white bg-dark p-2 opacity-75">
+              <h2 class="booking text-center">Quick booking</h2>
+              <!-- name -->
+              <label for="inputName" class="form-label">Name</label>
+              <input type="text" id="inputName" class="text-white form-control bg-dark" aria-describedby="input-name" placeholder="Input Name" >  
+              <!-- ./name -->
 
-             <!-- surname -->
-             <label for="inputPhone" class="form-label">Phone:(incl. international dial-up preference)</label>
-             <input type="tel" id="inputPhone" class="text-white form-control bg-dark" aria-describedby="input-phone" placeholder="Input Phone" >
-             <!-- ,/surname -->    
-              <!--input date   -->
-             <div class="row">
+              <!-- surname -->
+              <label for="inputSureName" class="form-label">Surname</label>
+              <input type="text" id="inputSurName" class="text-white form-control bg-dark" aria-describedby="input-name" placeholder="Input Surname" >
+              <!-- ./surname -->
+
+              <!-- email -->
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" id="inputEmail" class="text-white form-control bg-dark" aria-describedby="input-name" placeholder="Input Email" >
+              <!-- ./email -->   
+
+              <!-- surname -->
+              <label for="inputPhone" class="form-label">Phone:(incl. international dial-up preference)</label>
+              <input type="tel" id="inputPhone" class="text-white form-control bg-dark" aria-describedby="input-phone" placeholder="Input Phone" >
+              <!-- ./surname --> 
+
+              <!--input number, dates   -->
+              <div class="row">
+
                 <div class="col-lg col-sm-6">
-                    <!-- numbret guest -->
+                    <!-- numbet of guest -->
                     <label for="inputNumberGuest" class="form-label text-white">Number of guests:</label>
                     <input type="number" id="inputNumberGuest" class="form-control bg-dark text-white" aria-describedby="input-number-guest"
                     placeholder="Number of guests" >
-                    <!-- ,/number guest  
+                    <!-- ./number of guest  
                     -->    
                 </div>
+
                 <div class="col-lg col-sm-6">
-                        <!-- date of arrival -->
+                    <!-- date of arrival -->
                     <label for="inputDate" class="form-label">Date of arrival:</label>
                     <input type="date" id="inputDate" class="form-control bg-dark text-white" aria-describedby="input-number-guest">
-                    <!-- date of departure -->   
+                    <!-- date of departure --> 
                 </div>
+
                 <div class="col-lg col-sm-6">
-                <!-- date of arrival -->
+                    <!-- date of arrival -->
                     <label for="inputDate" class="form-label">Date of departure:</label>
                     <input type="date" id="inputDate" class="form-control  bg-dark text-white" aria-describedby="input-number-guest">
                     <!--  ./ date of departure--> 
+                  </div>
+      
+              </div>
+              <!--./input number, dates  -->
+
+              <!-- form buttons -->
+              <div class="row my-2">
+
+                  <div class="col-sm-6">
+                        <div class="d-grid gap-2">
+                  <button class="btn btn-primary btn-now" type="button">Book now</button> 
+                  </div>
+
                 </div>
+                  <div class="col">
+                    <div class="d-grid gap-2">                     
+                      <button type="button" class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Virtual tour
+                        </button>
+                    </div>
+                  </div>            
     
-             </div>
-            <!-- input date -->
-             <!-- buttons -->
-
-            <div class="row my-2">
-                <div class="col-sm-6">
-                       <div class="d-grid gap-2">
-                <button class="btn btn-primary btn-now" type="button">Book now</button> 
-                </div>
-                </div>
-                <div class="col">
-                    <div class="d-grid gap-2">
-                     
-                    <button type="button" class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Virtual tour
-                      </button>
-                </div>
-                </div>            
-   
-            </div>
-
-              
-            <!-- ./buttons -->
-        </form>
-
-          <!-- ./formular -->
+              </div>              
+              <!-- ./form buttons -->
+            </form>
+            <!-- ./formular -->
+          </div>
         </div>
-
-        </div>
-
-        <!-- modal -->
-        <!-- Button trigger modal -->
       </header>
     </div>
+    <!-- ./main page-->
 
     <!-- Modal -->
     <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="ModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
+            <h1 class="modal-title fs-5" id="ModalLabel">
               Exploring...
             </h1>
             <button
@@ -153,7 +155,7 @@
     <div class="sticky-top">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid text-black">
-          <h4>Candy Hills</h4>
+          <h4 class="p-2 m-0">Candy Hill</h4>
           <button
             class="navbar-toggler"
             type="button"
@@ -177,11 +179,12 @@
         </div>
       </nav>
     </div>
-    <!-- End nav bar -->
+    <!-- ./nav bar -->
     <!-- ******************************************* -->
     <main>
+       <!-- history -->
       <section id="history-section">
-        <!-- history -->
+       
         <div class="container mt-4 p-4 text-center">
           <div class="container  text-center">
             <div class="row">
@@ -253,8 +256,8 @@
             </div>
           </div>
         </div>
-        <!-- ,/history -->
       </section>
+      <!-- ./history -->
       <!-- card section -->
       <section id="cards-section">
         <div class="container mt-4 p-4 text-center">
@@ -415,7 +418,7 @@
         </div>
       </section>
       <!-- card section -->
-      <!-- gallery -->
+      <!-- gallery section-->
       <div id="galery-section"></div>
       <section>
         <div class="container mt-4 p-3 text-center">
@@ -500,16 +503,18 @@
           </div>
         </div>
       </section>
-      <!-- ./gallery -->
+      <!-- ./gallery section -->
     </main>
-    <!-- contact -->
+    <!-- contact section-->
     <footer>
       <section id="contact-section">
         <div class="container mt-4 p-3 text-center">
           <h2>Contact us</h2>
+
           <div class="row">
+
+            <!-- mapa-->
             <div class=" col-lg-4 col-md-4col-sm-6">
-              <!-- mapa-->
               <div class="ratio ratio-1x1">
                 <iframe
                   width="100%"
@@ -524,8 +529,9 @@
                   ></iframe
                 >
               </div>
-              <!-- ./mapa -->
             </div>
+            <!-- ./mapa -->
+
             <!-- icons -->
             <div
               class="d-flex flex-column align-items-center col-lg-4 col-sm-6 icons"
@@ -541,9 +547,8 @@
               <!-- </div>                     -->
             </div>
             <!-- icons -->
-            <!-- contacts item -->
 
-            
+            <!-- contacts item -->            
               <div
                 class="d-flex flex-column align-items-center col-lg-4 col-sm-6"
               >
@@ -562,14 +567,13 @@
                 </p>
                 </div>
               </div>
-             
-
             <!-- ./contacts item -->
           </div>
+
         </div>
       </section>
     </footer>
-    <!-- ./contact -->
+    <!-- ./contact section-->
 
     <!-- script BS ***************************************************-->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
