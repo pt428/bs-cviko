@@ -11990,11 +11990,6 @@ header {
   min-height: 95vh;
 }
 
-@media only screen and (max-width: 1092px) {
-  header {
-    height: 100%;
-  }
-}
 .main-page {
   max-width: 35rem;
   min-width: 15rem;
