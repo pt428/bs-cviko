@@ -1,0 +1,73 @@
+// Then import Bootstrap
+$primary: rgb(190, 230, 14);
+ 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import "./node_modules/bootstrap/scss/bootstrap";
+body{
+   background-color: black;
+   margin: 0;
+   color: antiquewhite;
+}
+ header{
+    // color: white;
+    background-image:  url(./img/bg-img.jpg);
+   //  background-attachment: fixed;
+   //  background-position: center; /* Center the image */
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    height: 95vh;
+ }
+ @media only screen and (max-width: 1092px) {
+   header{
+     
+      height: 100%;
+   }
+ }
+ .main-page{
+   max-width:  35rem;
+  min-width: 15rem;
+ }
+ form{
+   border-radius: 1rem;
+  
+ }
+ .header-h1,h2 {
+   font-family: "Libre Baskerville";
+    
+   
+   margin: 1rem;
+   padding-top: 2rem;
+}
+.header-h2{
+   font-family: Roboto;
+   color: rgb(240, 4, 4);
+   
+   text-transform: uppercase;
+   font-weight: bold;
+}
+h2.booking{
+   
+   color: aquamarine;
+}
+ 
+ input .header-form{
+    background-color: rgb(50, 16, 240);
+    color: red;
+ }
+  
+ 
+ 
+ .icons{
+   font-size: 2rem;
+ }
+ input[type=text]::placeholder ,
+ input[type=email]::placeholder ,
+ input[type=phone]::placeholder ,
+ input[type=tel]::placeholder ,
+ input[type=number]::placeholder ,
+ input[type=date]::placeholder 
+ {
+   color: rgb(165, 156, 156);
+    
+ }
+ 
