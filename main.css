@@ -11994,6 +11994,11 @@ form {
   border-radius: 1rem;
 }
 
+.main-page {
+  max-width: 35rem;
+  min-width: 15rem;
+}
+
 .header-h1,
 h2,
 .h2 {

@@ -20,8 +20,13 @@ header {
  
 //input form on main page
 form {
-  border-radius: 1rem;
+  border-radius: 1rem;   
 }
+//size of quick booking form
+.main-page {
+   max-width: 35rem;
+   min-width: 15rem;
+ }
 // Candy Hill, Quick booking
 .header-h1,
 h2 {
